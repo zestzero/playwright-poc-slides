@@ -5,6 +5,12 @@
   "author": "Krit B.",
   "license": "MIT",
   "scripts": {
-    "preview": "npx @marp-team/marp-cli@^2 --bespoke.transition --preview ./slide.md"
+    "preview": "npx @marp-team/marp-cli@^2 --bespoke.transition --preview ./slides/slide.md",
+    "export:html": "npx @marp-team/marp-cli@latest --input-dir slides && cp -R ./slides/resources ./public/resources"
+  },
+  "marp": {
+    "inputDir": "./slides",
+    "output": "./public",
+    "themeSet": "./themes"
   }
 }
