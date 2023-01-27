@@ -1,0 +1,10 @@
+{
+  "name": "playwright-presentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Krit B.",
+  "license": "MIT",
+  "scripts": {
+    "preview": "npx @marp-team/marp-cli@^2 --bespoke.transition --preview ./slide.md"
+  }
+}
